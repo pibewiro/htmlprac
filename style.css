@@ -1,0 +1,130 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color:#fff;
+}
+
+:root{
+    --primaryColor:#243249;
+    --hoverColor:#1A5873;
+    --bgColor:#d2d2d2;
+  }
+
+.navbar
+{
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul
+{
+    display: flex;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    background: var(--primaryColor);
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover
+{
+    background: var(--hoverColor);
+}
+
+.content
+{
+    height: 50vh;
+    background: #333;
+    display: flex;
+    align-items:center;
+    position: relative;
+}
+
+.content:before 
+{
+    content:"";
+    background: url("./house.jpg") no-repeat center center/cover;
+    background-size: 100% 100%;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0.1;
+}
+
+
+.content div
+{
+    color: white;
+    padding: 0  20px;
+    z-index: 1;
+}
+
+.content div h1
+{
+    font-size: 50px;
+}
+
+.form-sec
+{
+    background: var(--primaryColor);
+    height: 45vh;
+}
+
+.form-sec h1
+{
+    text-align: center;
+    padding-top:35px;
+    background: var(--primaryColor);
+}
+
+form
+{
+    background: var(--primaryColor);
+    margin: 0 auto;
+    width:50%;
+}
+
+label
+{
+    display: block;
+}
+
+input
+{
+    width: 100%;
+}
+
+.form-group
+{
+    background: var(--primaryColor);
+    margin-bottom: 10px;
+}
+
+.button-div
+{
+    text-align: center;
+}
+
+button
+{
+    padding: 10px 40px;
+    background: var(--bgColor);
+    border: none;
+    color:#333;
+}
