@@ -110,10 +110,62 @@ a:hover
     padding-top:20px;
 }
 
+.footer
+{
+    border-top:1px solid var(--secondaryColor);
+    padding: 10px;
+    text-align: center;
+    margin-top:20px;
+}
 
-@media(max-width:700px)
+.footer p
+{
+    font-weight: bold;
+}
+
+@media(max-width:1000px)
 {
     .boxes{
         display:block;
     }
 }
+
+
+/* @media(max-width:756px)
+{
+    .boxes{
+        display:block;
+    }
+
+    .boxesSec
+    {
+        background: green;
+    }
+}
+
+@media(max-width:600px)
+{
+    .boxes{
+        display:block;
+    }
+
+    .boxesSec
+    {
+        background: green;
+    }
+}
+
+
+@media(max-width:500px)
+{
+    .boxes{
+        display:block;
+    }
+}
+
+@media(max-width:400px)
+{
+    .boxes{
+        display:block;
+    }
+} */
