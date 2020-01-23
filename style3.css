@@ -11,6 +11,7 @@
     --text:#000;
 }
 
+
 .navbar
 {
     background: var(--pc);
@@ -58,6 +59,7 @@ a:hover
     background: #000;
     position: relative;
     color: #c7c7c7;
+    width: 100%;
 }
 
 .showcase:before
@@ -92,7 +94,9 @@ a:hover
 
 #content
 {
-    background: #C7C7C7;
+    /* background: #C7C7C7; */
+    background-image:linear-gradient(to right, gray, #f4f4f4, gray);
+    
 }
 
 .boxes
@@ -109,8 +113,8 @@ a:hover
 {
     background: var(--pc);
     position: relative;
-    border-radius: 20px;
-    perspective: 1px;
+    box-shadow: 5px 5px 10px #333;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .box p
@@ -131,13 +135,13 @@ a:hover
     border-left: 1px solid #000;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
-    border-radius: 0 0 10px 10px
+    border-radius: 0 0 10px 10px;
 }
 
 .discount
 {
     padding:0 !important;
-    background: rgba(212, 9, 9, 0.5);
+    background: rgba(212, 9, 9, 1);
     position: absolute;
     top:0;
     right: 0;
@@ -157,12 +161,45 @@ a:hover
     text-align: center;
 }
 
+.hoverBtn
+{
+    visibility: hidden;
+    background: red;
+    text-align: center;
+}
+
+.hoverBtn button
+{
+    font-size:21px;
+    font-weight:bold;
+    padding: 5px 20px;
+    position: absolute;
+    bottom:5px;
+    left:6px;
+    background: #000;
+    border:none;
+    border-radius: 5px;
+    color:#fff;
+    width: 95%;
+}
+
+.box:hover, .hoverBtn button:hover
+{
+    cursor: pointer;
+} 
+
+.box:hover .hoverBtn
+{
+    visibility: visible;
+}
+
+
 @media(max-width:1000px)
 {
     .boxes
     {
         display:block;
-        width: 50%;
+        width: 70%;
     }
 
     .box
@@ -185,6 +222,11 @@ a:hover
     .showcase-text p
     {
         font-size: 20px;
+    }
+
+    .navbar h1
+    {
+    padding-left: 0;
     }
 }
 
