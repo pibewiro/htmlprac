@@ -165,8 +165,8 @@ a:hover
 .hoverBtn
 {
     visibility: hidden;
-    background: red;
-    text-align: center;
+    opacity: 0;
+    transition: visibility 0s linear 2s, opacity 2s;
 }
 
 .hoverBtn button
@@ -191,9 +191,17 @@ a:hover
     cursor: pointer;
 } 
 
+.hoverBtn button:hover
+{
+    cursor: pointer;
+    background: #333;
+} 
+
 .box:hover .hoverBtn
 {
     visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 3s;
 }
 
 .nav-input
